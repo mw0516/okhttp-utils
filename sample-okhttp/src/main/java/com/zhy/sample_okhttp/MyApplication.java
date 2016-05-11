@@ -9,8 +9,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhy on 15/8/25.
  */
-public class MyApplication extends Application
-{
+public class MyApplication extends Application {
     private String CER_12306 = "-----BEGIN CERTIFICATE-----\n" +
             "MIICmjCCAgOgAwIBAgIIbyZr5/jKH6QwDQYJKoZIhvcNAQEFBQAwRzELMAkGA1UEBhMCQ04xKTAn\n" +
             "BgNVBAoTIFNpbm9yYWlsIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MQ0wCwYDVQQDEwRTUkNBMB4X\n" +
@@ -27,8 +26,7 @@ public class MyApplication extends Application
             "-----END CERTIFICATE-----";
 
     @Override
-    public void onCreate()
-    {
+    public void onCreate() {
         super.onCreate();
         //这里可以设置自签名证书
 //        OkHttpUtils.getInstance().setCertificates(new InputStream[]{
